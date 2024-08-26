@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <!-- Utilizando a tag picture, conseguimos fazer com a mesma imagem, porem com tamanhos diferentes, altere-se sozinha dependendo do tamanho do dispositivo do usuário, tendo uma imagem dinâmica.-->
+    <picture>
+        <!-- Usamos a tag source media para colocar o tamanho maximo ou minimo que a imagem ira aparecer e quando ela tera que mudar para outra imagem de tamanho maior conforme o dispositivo do usuário, lembrando que esses source tem de vir acima da img, pois ela é a imagem grande -->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível"> <!-- Essa é a imagem grande -->
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/Hip-Hop.mp3" type="audio/mpeg">
+        <source src="midia/Hip-Hop.ogg" type="audio/ogg">
+        <source src="midia/Hip-Hop.wav" type="audio/wav">
+    </audio>
+
+</body>
+</html>
