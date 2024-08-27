@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo esta hospdado no meu próprio servidor</p>
+    <video width="300" poster="" autoplay loop controls>
+        <source src="midia/Meu-Video-MP4.mp4" type="video/mp4">
+        <source src="midia/Meu-Video-MKV.mkv" type="video/mkv">
+        <source src="midia/Meu-Video-WEBM.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com o reprodutor de vídeos</p>
+    </video>
+    <hr>
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk?si=w4kQNyt0po41R3Wp" title="YouTube video player" frameborder="0" allow="accelerometer; fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <hr>
+    <div style="padding:56.25% 0 0 0;position:relative;">
+        <iframe src="https://player.vimeo.com/video/53939563?h=fddd5445d9" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    </div><script src="https://player.vimeo.com/api/player.js"></script>
+    <p><a href="https://vimeo.com/53939563">Natureza / Nature</a> from <a href="https://vimeo.com/marvideo">MARCELO ANDRADE</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+</body>
+</html>
